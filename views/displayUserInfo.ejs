@@ -1,0 +1,36 @@
+
+
+
+<% include header %>
+
+<h4>Login Confirmation Page</h4>
+
+    <table id="login">
+        <tr><td>Record Number:</td>
+       	<td><%= recNumber %></td>
+        </tr>
+        <tr><td>First Name:</td>
+        <td><%= FN %></td>
+        </tr>
+        </tr>
+        <tr><td>Last Name:</td>
+        <td><%= LN %></td>
+        </tr>
+        </tr>
+        <tr><td>Employee Level:</td>
+        <td><%= level %></td>
+        </tr>
+        </tr>
+        <tr><td>Department:</td>
+        <td><%= department %></td>
+        </tr>
+        </tr>
+        <tr><td>Password:</td>
+        <td><%= password %></td>
+        </tr>
+    </table>
+
+
+    Wrong Department?  <a href="/user/editDept?rID=<%= recNumber %>=">Edit Here.</a>
+
+<% include footer %>

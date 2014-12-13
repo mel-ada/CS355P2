@@ -1,0 +1,32 @@
+<% include header %>
+
+<form method="POST" action="<%= action %>">
+    <table id="login">
+        <tr><td>Record Number:</td>
+            <!-- name attribute must be provided for non ajax forms -->
+            <td><input type="text" id="recNumber" name="recNumber" /></td>
+        </tr>
+        <tr><td>First Name:</td>
+            <!-- name attribute must be provided for non ajax forms -->
+            <td><input type="text" id="FN" name="FN" /></td>
+        </tr>
+        <tr><td>Last Name:</td>
+            <!-- name attribute must be provided for non ajax forms -->
+            <td><input type="text" id="LN" name="LN" /></td>
+        </tr>
+        <tr><td>Employee Level:</td>
+            <!-- name attribute must be provided for non ajax forms -->
+            <td><input type="text" id="level" name="level" /></td>
+        </tr>
+        <tr><td>Department:</td>
+            <!-- name attribute must be provided for non ajax forms -->
+            <td><input type="text" id="department" name="department" /></td>
+        </tr>
+        <tr><td>Password:</td>
+            <td><input type="password" id="password" name="password" /></td>
+        </tr>
+    </table>
+    <input type="submit">
+</form>
+
+<% include footer %>

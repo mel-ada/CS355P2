@@ -1,0 +1,31 @@
+
+<% include header %>
+
+<h4>Open Shifts</h4>
+Please e-mail Herman if you are able to take on any of these shifts.
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+
+   <% if(rs.length > 0) { %>
+    <table>
+         <tr><th> Day    In  Out   Station</th></tr>
+        <% for (var i=0; rs.length > i; i++) { %>
+            <tr>
+             <td> <%= rs[i].sh_Day %> <%= rs[i].sh_startTime %> <%= rs[i].sh_endTime %> <%= rs[i].sh_stnName %>
+             </td>
+            </tr>
+        <% } %>
+    </table>
+    <% } else { %>
+         No shifts are up for grabs.
+    <% } %>
+
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<% include footer %>

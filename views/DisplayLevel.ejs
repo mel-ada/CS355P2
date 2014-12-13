@@ -1,0 +1,41 @@
+
+<% include header %>
+
+<h4>Which level am I?</h4>
+
+   <% if(rs.length > 0) { %>
+    <table>
+         <tr><th> Level </th></tr>
+        <% for (var i=0; rs.length > i; i++) { %>
+            <tr>
+             <td> <%= rs[i].l_level %> <%= rs[i].l_Desc %> 
+             </td>
+            </tr>
+        <% } %>
+    </table>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+    
+         <h5> Description: </h5>
+            <p> -Inactive Level Employees are not currently scheduled to work shifts.</p>
+            <p> -Front Desk Level Employees are entry level and mainly work with customer service.</p>
+            <p> -Building Supervisor Level Employees are the heyholders of the building and oversee all departments during business hours.</p>
+            <p> -Programmer Level Employees oversee and coordinate the operations of departments.</p>
+            <p> -Full Time Level Employees oversee Programmer level employees and admisistrative operations.</p>
+
+
+    <% } else { %>
+         No users are entered into the database.
+    <% } %>
+
+
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<% include footer %>

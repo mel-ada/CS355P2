@@ -1,0 +1,20 @@
+<% include header %>
+
+<h4>Edit Department</h4>
+
+ <form method="POST" action="/user/postDept">
+    <table id="login">
+        <tr><td>Record Number:</td>
+            <!-- name attribute must be provided for non ajax forms -->
+            <td><input type="text" id="recNumber" name="recNumber" /></td>
+        </tr>
+        <tr><td>Department:</td>
+            <!-- name attribute must be provided for non ajax forms -->
+            <td><input type="text" id="newdepartment" name="newdepartment" /></td>
+        </tr>
+    </table>
+    <input type="submit">
+</form>
+
+
+<% include footer %>
